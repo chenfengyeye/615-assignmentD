@@ -110,7 +110,7 @@ monthly_temp_ts <- combined_data %>%
   filter(n_obs >= 300) %>%
   mutate(diff_temp = avg_air_temp - avg_water_temp) %>%
   arrange(month)
-#| label: plot-monthly-ts
+
 #| fig-cap: "Monthly average air vs water temperature; dashed line is the air–water difference."
 #| fig-width: 8
 #| fig-height: 4
@@ -125,7 +125,7 @@ ggplot(monthly_temp_ts, aes(x = month)) +
     x = "Month", y = "Temperature (°C)", color = "Legend"
   ) +
   theme_minimal(base_size = 12)
-#| label: monthly-climo
+
 monthly_temp_climo <- combined_data %>%
   filter(!is.na(datetime)) %>%
   mutate(moy = factor(month(datetime), levels = 1:12, labels = month.abb)) %>%
