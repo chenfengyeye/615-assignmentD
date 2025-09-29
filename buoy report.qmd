@@ -13,7 +13,7 @@ execute:
 editor: source
 ---
 
-research topic：how do the monthly averages of air temperature (ATMP) and water temperature (WTMP) compare (1984–2024), and what does their differencereveal about seasonal ocean–atmosphere coupling?
+research topic：how do the monthly averages of air temperature (ATMP) and water temperature (WTMP) compare (1984–2024), and what does their difference reveal about seasonal ocean–atmosphere coupling?
 
 ```{r}
 library(data.table) 
